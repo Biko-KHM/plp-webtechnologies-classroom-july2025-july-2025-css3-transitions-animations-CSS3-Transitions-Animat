@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------------- Part 1 ---------------- */
+.hover-btn {
+  background: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hover-btn:hover {
+  background: darkorange;
+  transform: scale(1.1);
+}
+
+/* Box with keyframes */
+.moving-box {
+  width: 80px;
+  height: 80px;
+  background: orange;
+  margin: 20px auto;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+/* ---------------- Part 3 ---------------- */
+#js-box {
+  width: 100px;
+  height: 100px;
+  background: steelblue;
+  margin: 20px auto;
+  border-radius: 8px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.animate {
+  transform: rotate(360deg) scale(1.2);
+  opacity: 0.6;
+}
